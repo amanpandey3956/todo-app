@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: your-dockerhub-username/todo-backend
+  repository: amanpandey3956/todo-backend
   tag: latest
   pullPolicy: IfNotPresent
 
