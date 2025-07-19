@@ -10,3 +10,8 @@ service:
   port: 3000
 
 containerPort: 3000
+
+serviceAccount:
+  create: false
+  name: ""
+

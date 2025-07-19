@@ -10,3 +10,8 @@ service:
   port: 80
 
 containerPort: 80
+
+serviceAccount:
+  create: false
+  name: ""
+
