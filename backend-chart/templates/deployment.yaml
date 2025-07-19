@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "frontend-chart.fullname" . }}
+  name: {{ include "backend-chart.fullname" . }}
   labels:
-    app: {{ include "frontend-chart.name" . }}
+    app: {{ include "backend-chart.name" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "frontend-chart.name" . }}
+      app: {{ include "backend-chart.name" . }}
   template:
     metadata:
       labels:
-        app: {{ include "frontend-chart.name" . }}
+        app: {{ include "backend-chart.name" . }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
